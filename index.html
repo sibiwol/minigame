@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniGame</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="imgs/logo.png" alt="logo" class="header__logo" />
+    </header>
+    <nav class="menu">
+        <button class="menu__btn">
+          <img
+            src="imgs/blue_t.png"
+            alt="tshirt"
+            class="btn-img"
+            data-key="type"
+            data-value="tshirt"
+          />
+        </button>
+        <button class="menu__btn">
+          <img
+            src="imgs/blue_p.png"
+            alt="pant"
+            class="btn-img"
+            data-key="type"
+            data-value="pants"
+          />
+        </button>
+        <button class="menu__btn">
+          <img
+            src="imgs/blue_s.png"
+            alt="skirt"
+            class="btn-img"
+            data-key="type"
+            data-value="skirt"
+          />
+        </button>
+        <button class="menu__btn blue" data-key="color" data-value="blue">
+          Blue
+        </button>
+        <button class="menu__btn yellow" data-key="color" data-value="yellow">
+          Yellow
+        </button>
+        <button class="menu__btn pink" data-key="color" data-value="pink">
+          Pink
+        </button>
+      </ul>
+    </nav>
+    <main class="main">
+      <ul class="items"></ul>
+    </main>
+  </body>
+</html>

@@ -7,6 +7,11 @@
   --interval-small: 8px;
 
   --with-contain: 500px;
+  --with-btn: 68px;
+  --height-btn: 62px;
+  --with-item: 54px;
+
+  --font-size-medium: 18px;
 }
 body {
   background-color: var(--color-black);
@@ -44,10 +49,10 @@ button {
 }
 .menu__btn {
   border-radius: 4px;
-  min-height: 62px;
-  min-width: 68px;
+  min-height: var(--height-btn);
+  min-width: var(--with-btn);
   cursor: pointer;
-  font-size: 18px;
+  font-size: var(--font-size-medium);
   transition: 200ms ease;
 }
 .menu__btn:hover {
@@ -59,8 +64,8 @@ button {
   padding: var(--interval-medium);
 }
 .btn-img {
-  max-height: 62px;
-  max-width: 68px;
+  max-height: var(--height-btn);
+  max-width: var(--with-btn);
 }
 .blue {
   background-color: skyblue;
@@ -91,7 +96,7 @@ button {
   cursor: pointer;
 }
 .item__img {
-  max-width: 54px;
+  max-width: var(--with-item);
 }
 .item__description {
   margin-left: var(--interval-medium);
@@ -99,4 +104,19 @@ button {
 }
 .invisible {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --interval-large: 76px;
+    --interval-medium: 17px;
+    --interval-small: 8px;
+
+    --with-contain: 350px;
+    --with-btn: 48px;
+    --height-btn: 42px;
+    --with-item: 48px;
+
+    --font-size-medium: 12px;
+  }
 }

@@ -77,8 +77,8 @@ button {
 .main {
   display: block;
   margin: auto;
-  width: 500px;
-  height: 600px;
+  width: var(--with-contain);
+  height: 400px;
   overflow-y: auto;
 }
 

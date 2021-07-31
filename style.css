@@ -9,7 +9,8 @@
   --with-contain: 500px;
   --with-btn: 68px;
   --height-btn: 62px;
-  --with-item: 54px;
+  --height-item: 52px;
+  --with-item-img: 54px;
 
   --font-size-medium: 18px;
 }
@@ -33,6 +34,7 @@ button {
   display: block;
   margin: auto;
   transition: 200ms ease;
+  cursor: pointer;
 }
 .header__logo:hover {
   transform: scale(1.1);
@@ -41,7 +43,6 @@ button {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: var(--with-contain);
   margin: auto;
   margin-top: var(--interval-medium);
@@ -53,6 +54,7 @@ button {
   min-width: var(--with-btn);
   cursor: pointer;
   font-size: var(--font-size-medium);
+  text-align: center;
   transition: 200ms ease;
 }
 .menu__btn:hover {
@@ -90,13 +92,15 @@ button {
 .item {
   display: flex;
   margin-bottom: var(--interval-small);
+  align-items: center;
   padding: var(--interval-medium);
+  height: var(--height-item);
   background-color: white;
   border-radius: 4px;
   cursor: pointer;
 }
 .item__img {
-  max-width: var(--with-item);
+  max-width: var(--with-item-img);
 }
 .item__description {
   margin-left: var(--interval-medium);
@@ -108,14 +112,11 @@ button {
 
 @media screen and (max-width: 768px) {
   :root {
-    --interval-large: 76px;
-    --interval-medium: 17px;
-    --interval-small: 8px;
-
     --with-contain: 350px;
     --with-btn: 48px;
     --height-btn: 42px;
-    --with-item: 48px;
+    --height-item: 38px;
+    --with-item-img: 48px;
 
     --font-size-medium: 12px;
   }

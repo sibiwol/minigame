@@ -1,21 +1,26 @@
-들어가야 할 내용
+# MiniGame 프로젝트
 
-- description: <br/>
-  프로젝트에 대한 간단한 설명.
-  어떤 일을 수행하기 위한 프로젝트인지, <br/>
-  어떤 서비스를 위한 것인지. <br/>
-  간결하고 명료하게 <br/>
-  프로젝트의 가치를 전달하는 것도 좋음
-- environment: <br/>
-  실행환경. <br/>
-  OS, 컴파일러, Hardware와 관련된 환경 <br/>
-  Multicore 환경에서 돌아가는 프로그램이라면 CPU나 RAM 같은 것 작성
-- prerequistie: <br/>
-  작성한 코드를 실행하기 전에 설치해야할 pakage나 의존성이 걸리는 문제들 설명 (실행방법)
-- files: <br/>
-  중요한 코드 파일들 몇 개를 대상으로 해당 파일이 어떠한 역할을 하는 파일인지 간단히 설명해주면 좋을 거 같음
-- usage: <br/>
-  작성한 코드를 어떻게 실행해야 하는지에 대한 가이드라인 <br/>
-  Usage Example을 함께 작성하면 좋다
-- etc...: <br/>
-  라이센스, contributing 같은 것
+접속링크 👉 https://sibiwol.github.io/minigame/
+
+## 사용한 기술들
+
+`HTML` `CSS` `JavaScript` `JSON` `PWA`
+
+## 진행 목적
+
+- JSON 통신에 대해 알아본다.
+
+## 배운 점
+
+1. JSON 통신<br/>
+   - 직접 `.json` 파일 안에 데이터를 넣고 `fetch` API를 이용해 데이터를 받아와 `javascript` 코드를 짰다.
+2. CSS 글로벌 변수의 필요성 <br/>
+   - 글로벌 변수를 정해준다면 미디어쿼리 안에 글로벌 변수 값만 바꿔 쉽게 반응형 웹사이트를 만들 수 있다.
+3. PWA. 웹앱 만들기 <br/>
+   - 웹 사이트를 웹앱으로 만들어 데스크탑 또는 모바일에서도 어플리케이션을 다운 받을 수 있도록 만들었다.
+   - PWA 만드는 과정 포스트 👉 https://velog.io/@sibiwol/PWA-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+## 레퍼런스
+
+- 드림코딩 아카데미 - [쇼핑몰 미니게임 클론 코딩 & 코드 리뷰](https://academy.dream-coding.com/courses/mini-shopping)
+- 드림코딩 by 엘리 - [PWA (Progressive Web App) 개념과 따라만들기 📲](https://www.youtube.com/watch?v=FEBkne7Nyu4)

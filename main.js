@@ -1,3 +1,6 @@
+"use strict";
+
+// json 통신해서 데이터 받아오기
 function loadItems() {
   return (
     fetch("data/data.json")
@@ -40,22 +43,8 @@ function onButtonClick(event, items) {
     return;
   }
 
-  // item을 전체적으로 creat하는 것보단 css display 이용하는 것이 더 좋음
-  // updateItems(items, key, value);
   displayItems(items.filter((item) => item[key] === value));
 }
-
-// [key] == value면 item을 보여준다?
-// 2.7 9:00
-// function updateItems(items, key, value) {
-//   items.forEach((item) => {
-//     if (item.dataset[key] == value) {
-//       item.classList.remove("invisible");
-//     } else {
-//       item.classList.add("invisible");
-//     }
-//   });
-// }
 
 // main
 loadItems()

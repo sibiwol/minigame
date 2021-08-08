@@ -1,0 +1,123 @@
+/* 글로벌 변수 정하기 */
+:root {
+  --color-black: rgb(57, 57, 57);
+
+  --interval-large: 76px;
+  --interval-medium: 12px;
+  --interval-small: 8px;
+
+  --with-contain: 500px;
+  --with-btn: 68px;
+  --height-btn: 62px;
+  --height-item: 52px;
+  --with-item-img: 54px;
+
+  --font-size-medium: 18px;
+}
+body {
+  background-color: var(--color-black);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.header {
+  margin-top: var(--interval-large);
+}
+.header__logo {
+  display: block;
+  margin: auto;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+.header__logo:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: var(--with-contain);
+  margin: auto;
+  margin-top: var(--interval-medium);
+  margin-bottom: var(--interval-medium);
+}
+.menu__btn {
+  border-radius: 4px;
+  min-height: var(--height-btn);
+  min-width: var(--with-btn);
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  text-align: center;
+  transition: 200ms ease;
+}
+.menu__btn:hover {
+  transform: scale(1.1);
+}
+.menu__btn:nth-child(4),
+.menu__btn:nth-child(5),
+.menu__btn:nth-child(6) {
+  padding: var(--interval-medium);
+}
+.btn-img {
+  max-height: var(--height-btn);
+  max-width: var(--with-btn);
+}
+.blue {
+  background-color: skyblue;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.main {
+  display: block;
+  margin: auto;
+  width: var(--with-contain);
+  height: 500px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  margin-bottom: var(--interval-small);
+  align-items: center;
+  padding: var(--interval-medium);
+  height: var(--height-item);
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.item__img {
+  max-width: var(--with-item-img);
+}
+.item__description {
+  margin-left: var(--interval-medium);
+  font-size: 16px;
+}
+.invisible {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --with-contain: 350px;
+    --with-btn: 48px;
+    --height-btn: 42px;
+    --height-item: 38px;
+    --with-item-img: 48px;
+
+    --font-size-medium: 12px;
+  }
+}
